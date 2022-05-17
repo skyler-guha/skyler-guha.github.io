@@ -1,0 +1,18 @@
+.main_title{
+  color: red;
+  letter-spacing: 3px;
+}
+
+.title_links{
+  background-color: lightpink;
+}
+
+.first_hr{
+  height: 5px;
+  color: gray;
+  background-color: gray;
+}
+
+div{
+  font-family: arial;
+}
