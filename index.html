@@ -58,6 +58,36 @@
     </ul>
   </div>
 
+  <hr class="json-validator">
+
+  <div>
+    <h2>Schema Based Json Validator</h2>
+    <ul>
+      <li>This is a demo program that <b>demonstrates validating the datastructure and contents of a .json file</b> using a schema file.</li>
+      <li>It also <b>demonstrates creating a schema</b> for a given problem situation.</li>
+      <li>It can be used to validate any .json file and can be importd as a module as well.</li>
+      <li>It follows the PEP8 coding standard and contains docstrings.</li>
+      <li>It was written based on a problem statement given to me by <i>Third Origin LLC</i> as part of their selection process for their internship.</li>
+      <li><a href="https://github.com/Skyler-Guha/schema-based-json-validator"><b>Click here to view repository</b></a>
+    </ul>
+
+    <h3>Given Problem statement:</h3>
+
+    Validate a Json against a given schema file.<br/><br/>
+    <b>Create a class called JsonValidator. The class should be able to validate using a schema with the following properties:</b>
+    <ul>
+      <li>required fields. Example id, name field to be declared as they are mandatory </li>
+      <li>atleast one of many fields to be present. Example one of home phone or cell phone or work phone fields</li>
+      <li>either one field or another field. For example: Either birth date or govt id number </li>
+      <li>mutually exclusive fields (if one is present, the other should not be present)</li>
+      <li>field value to be one of a set of values. Example field day can have only one of SU,MO,TU,WE,TH,FR,SA (enum)</li>
+    </ul>
+
+    <b>Define the following method:<br/></b>
+    validate_schema(json_file, schema_file, schema_integrity_file)<br/>
+    (method should return True or False if validation succeeds or fails)
+
+  </div>
 
 </body>
 </html>
