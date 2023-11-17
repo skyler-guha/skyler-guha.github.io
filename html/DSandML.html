@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--favicon-->
+<link rel="icon" type="image/x-icon" href="assets\images\site\icons8-favicon-16.png">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skyler's Portfolio</title>
+<meta property="description" content="Projects by Skyler Guha" />
+<meta name="keywords" content="Skyler Guha, Projects, Programing, Python, Machine Learning, Computer Vision, AI, ML">
+<meta name="robots" content="INDEX, FOLLOW">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+<body class="w3-light-grey w3-content" style="max-width:1900px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:240px;" id="mySidebar"><br>
+      <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-xxlarge w3-padding w3-hover-grey" title="close menu">
+          <i class="fa fa-remove"></i>
+        </a>
+        
+        <h4><b>Index :</b></h4>
+      </div>
+      <div class="w3-bar-block">
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+        
+        <a href="./DSandML.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding  w3-text-teal"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>DS & ML</a>
+        <a href="./python_backend.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Python + Backend</a>
+        <a href="./CandCplusplus.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>C/C++ Programming</a>
+      </div>
+      
+    </nav>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:240px">
+    
+      <!-- Header -->
+      <header id="portfolio">
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+          <i class="fa fa-bars w3-hide-large">
+            <b>DS and ML</b>
+          </i>
+        </span>
+        
+        <div class="w3-container">
+        <div class="w3-bottombar">
+        </div>
+          <br>
+        </div>
+      </header>
+      
+      <div class="main">
+
+        <!-- Background-Swap Camera -->
+        <div class="w3-container w3-margin-bottom" style="width:70%;  margin-left: auto; margin-right: auto; ">
+            <img class="myImg" src="..\assets\images\media\DSandML\BSC-demo.gif" alt="GIF of the program working" style="width:100%; border-style: solid; border-width: 1px; border-color: gray;">
+            <div class="w3-container w3-white" style="width:auto">
+              <p><b>Background-Swap Camera</b></p>
+              <p>
+                <ul>
+                    <li>It is a program that allows the user to take photos and swap the background behind them with an image in real-time.</li>
+                    <li>It uses the YOLO8 Model for object detection and segmentation.</li>
+                    <li>It uses Open CV and Pillow libraries for image capture and processing.</li>
+                    <li>It can show FPS for the video stream being shown.</li>
+                    <li>I created many custom transformers and prepared a pipeline for model deployment</li>
+                    <li>It is written in Python and saved on github.</li>
+                    <li><a href="https://github.com/Skyler-Guha/background-swap_camera"><b>Click here to view repo</b></a></li>
+                </ul>
+                <br> 
+              </p>
+            </div>
+        </div>
+
+
+        <!-- Fraud Transaction Detection -->
+        <div class="w3-container w3-margin-bottom" style="width:70%;  margin-left: auto; margin-right: auto; ">
+            <img class="myImg" src="https://media.istockphoto.com/id/915806412/photo/technology-photos.jpg?s=612x612&w=0&k=20&c=-J9o_ZLH5PHWNH1yzWKHJ8PAaIbbWUnz5_vmTJ1GwR0=" alt="image with the theam of transactions" style="width:100%; border-style: solid; border-width: 1px; border-color: gray;">
+            <div class="w3-container w3-white" style="width:auto">
+              <p><b>Fraud Transaction Detection</b></p>
+              <p>
+                <ul>
+                    <li>The aim here was to predict if a transaction was fraudulent or not based on the data.</li>
+                    <li>This challenge involved data exploration and cleaning, as well as the use of feature selection amd ML clasification techniques.</li>
+                    <li>I trained many custom models including neural networks.</li>
+                    <li>I made the use of libraries such as tenserflow, missingno, sklearn, numpy, pandas, matplotlib and seaborn.</li>
+                    <li>I created many custom transformers and prepared a pipeline for model deployment</li>
+                    <li>It is written in Python and saved on kaggle.</li>
+                    <li><a href="https://www.kaggle.com/code/skylerguha/fraud-transaction-detection"><b>Click here to view code notebook</b></a></li>
+                </ul>
+                <br> 
+              </p>
+            </div>
+        </div>
+
+        <!-- Digit Drawing And Recognizing Program -->
+        <div class="w3-container w3-margin-bottom" style="width:70%;  margin-left: auto; margin-right: auto; ">
+            <img class="myImg" src="..\assets\images\media\DSandML\digit-drawing-and-recognizing-program-demo.gif" alt="GIF of the program working" style="width:100%; border-style: solid; border-width: 1px; border-color: gray;">
+            <div class="w3-container w3-white" style="width:auto">
+              <p><b>Digit Drawing And Recognizing Program</b></p>
+              <p>
+                <ul>
+                    <li>It is a program that allows the user to draw a digit and classify it as well as save the image data and index through existing saved data.</li>
+                    <li>It uses the MNIST digits dataset for training and a self made dataset for testing that was collected  in person from randoom individuals.</li>
+                    <li>This program was originally made as part of my collage major project.</li>
+                    <li>I trained neural networks for my predictions.</li>
+                    <li>It is written in Python and saved on github.</li>
+                    <li><a href="https://github.com/Skyler-Guha/digit-drawing-and-recognizing-program/tree/main"><b>Click here to view repo</b></a></li>
+                </ul>
+                <br> 
+              </p>
+            </div>
+        </div>
+
+        <!-- Titanic Survival Prediction -->
+        <div class="w3-container w3-margin-bottom" style="width:70%;  margin-left: auto; margin-right: auto; ">
+            <img class="myImg" src="https://upload.wikimedia.org/wikipedia/commons/8/81/Titanic_in_color.png" alt="image of titanic" style="width:100%; border-style: solid; border-width: 1px; border-color: gray;">
+            <div class="w3-container w3-white" style="width:auto">
+              <p><b>Titanic Survival Prediction</b></p>
+              <p>
+                <ul>
+                    <li>This is my entry for the kaggle "Titanic - Machine Learning from Disaster" ML codeing challenge.</li>
+                    <li>The aim here was to predict if a passenger survived or not based on the available information on them.</li>
+                    <li>This challenge involved data exploration and cleaning, as well as the use of feature selection amd ML clasification techniques.</li>
+                    <li>I trained many custom models including neural networks.</li>
+                    <li>I made the use of libraries such as tenserflow, missingno, sklearn, numpy, pandas, matplotlib and seaborn.</li>
+                    <li>I created many custom transformers and prepared a pipeline for model deployment</li>
+                    <li>It is written in Python and saved on kaggle.</li>
+                    <li><a href="https://www.kaggle.com/code/skylerguha/titanic-competition"><b>Click here to view code notebook</b></a></li>
+                </ul>
+                <br> 
+              </p>
+            </div>
+        </div>
+
+        
+
+    
+      </div><!-- all info before here -->
+    
+    <!-- End page content -->
+    </div>
+    </body>
+
+    <script src="../scripts/utils.js"></script>
+
+</html>

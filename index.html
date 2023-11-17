@@ -1,114 +1,133 @@
 <!DOCTYPE html>
-<!-- For more info visit https://happycoding.io/tutorials/html/github-pages -->
 <html>
 <head>
-  <link rel="stylesheet" href="./css/portfolio.css">
-  <title>Skyler's Portfolio</title>
+<!--favicon-->
+<link rel="icon" type="image/x-icon" href="assets\images\site\icons8-favicon-16.png">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skyler's Portfolio</title>
+<meta property="description" content="Projects by Skyler Guha" />
+<meta name="keywords" content="Skyler Guha, Projects, Programing, Python, Machine Learning, Computer Vision, AI, ML">
+<meta name="robots" content="INDEX, FOLLOW">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/index.css">
 </head>
+<body id="myPage">
 
-<body>
 
-  <div>
-    <h1 class="main_title">{Skyler's Portfolio}</h1>
-    <p class="title_links">
-      <em>Github: <a href="https://github.com/Skyler-Guha">https://github.com/Skyler-Guha</a><br>
-          Kaggle: <a href="https://www.kaggle.com/skylerguha">https://www.kaggle.com/skylerguha</a><br>
-          LinkedIn: <a href="https://www.linkedin.com/in/skyler-guha/">https://www.linkedin.com/in/skyler-guha/</a><br>
-      </em>
-    </p>
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Portfolio</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Resume & Contact</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button">Resume & Contact</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="assets\images\site\background_photo.jpg" alt="boat" style="width:100%;min-height:300px;max-height:300px;object-fit:cover;">
+  <div class="w3-display-middle w3-container w3-padding-32 w3-hide-small" style="color:#FFFF33; text-align: center;">
+    
+    <h1 >SKYLER GUHA</h1>
+    <p>Programmer / Data Scientist / Machine Learning Engineer</p>
+  </div>
+</div>
+
+
+<!--Page Container -->
+<div class="w3-content" style="max-width:1100px">
+
+
+<div id="portfolio" class="w3-padding-16"></div>
+
+
+<!-- portfolio Row -->
+<h2 style="text-align: center;">PORTFOLIO</h2>
+<div class="w3-container w3-row-padding w3-padding-24 w3-light-grey">
+
+<!-- First Photo Grid-->
+<div class="w3-row-padding">
+
+  <div class="w3-third w3-container w3-margin-bottom">
+    <a href="html\DSandML.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Neural_network_with_dark_background.png" alt="Click image to see Data Science / Machine Learning section" class="w3-hover-opacity cropped">
+    </a>
+      <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Data Science<br>&<br>Machine Learning</b></p>
+    </div>
   </div>
 
-  <hr class="first_hr">
-  
-  <div>
-    <h2>Background-Swap Camera</h2>
-    <img src="./assets/images/BSC-demo.gif" width="700" alt="A gif of the program in action">
-    <ul>
-      <li>It is a program that allows the user to take photos and swap the background behind them with an image in real-time.</li>
-      <li>It uses the YOLO8 Model for object detection and segmentation.</li>
-      <li>It uses Open CV and Pillow libraries for image capture and processing.</li>
-      <li>It can show FPS for the video stream being shown.</li>
-      <li>It is written in Python.</li>
-      <li><a href="https://github.com/Skyler-Guha/background-swap_camera"><b>Click here to view repository</b></a>
-    </ul>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <a href="html\python_backend.html">
+      <img src="assets\images\site\python_logo.png" alt="Click image to see Python Programing & Backend Development section" class="w3-hover-opacity cropped">
+    </a>
+      <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Python Programing<br>&<br>Backend Development</b></p>
+    </div>
   </div>
 
-  <hr>
-            
-  <div>
-    <h2>Digit Drawing And Recognizing Program</h2>
-    <img src="./assets/images/digit-drawing-and-recognizing-program-demo.gif" width="700" alt="A gif of the program in action">
-    <ul>
-      <li>It is a program that allows the user to draw a digit and classify it as well as save the image data and index through existing saved data.</li>
-      <li>It uses the MNIST digits dataset for training and a self made dataset for testing that was collected  in person from randoom individuals.</li>
-      <li>This program was originally made as part of my collage major project.</li>
-      <li>I made the use of neural networks for my predictions.</li>
-      <li>It is writen in Python.</li>
-      <li><a href="https://github.com/Skyler-Guha/digit-drawing-and-recognizing-program/tree/main"><b>Click here to view repository</b></a>
-    </ul>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <a href="html\CandCplusplus.html">
+      <img src="assets\images\site\CandCplusplus.jpg" alt="woodcuts" style="width: 100%" class="w3-hover-opacity cropped">
+    </a>
+      <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>C/C++<br>Programing<br>&#8192;</b></p>
+    </div>
   </div>
 
-  <hr>
+</div>
 
-  <div>
-    <h2>Titanic Survival Prediction</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Titanic_in_color.png" width="700" alt="Image of titanic">
-    <ul>
-      <li>This is my entry for the kaggle "Titanic - Machine Learning from Disaster" ML codeing challenge.</li>
-      <li>The aim here was to predict if a passenger survived or not based on the available information on them.</li>
-      <li>This challenge involved data exploration and cleaning, as well as the use of ML clasification techniques.</li>
-      <li>I made the use of neural networks for my predictions.</li>
-      <li>I made the use of libraries such as tenserflow, missingno, sklearn, numpy, pandas, matplotlib and seaborn.</li>
-      <li>I created many custom transformers and prepared a pipeline for model deployment</li>
-      <li>It is writen in Python.</li>
-      <li><a href="https://www.kaggle.com/code/skylerguha/titanic-competition"><b>Click here to view code notebook</b></a>
-    </ul>
+<div id="contact"></div>
+</div>
+
+<div class="w3-section w3-bottombar">
+</div>
+
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-large w3-deep-purple" id="contact">
+
+  <a href="assets\documents\skyler_resume.pdf">
+    <button class="w3-button w3-orange w3-padding-large w3-margin-top w3-margin-bottom">
+      <i class="fa fa-download w3-margin-right"></i>Download Resume
+    </button>
+  </a>
+
+  <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+    <a href="mailto:skylerguha@gmail.com" target="_blank">
+    <div class="w3-third w3-cyan">
+      <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+      <p>skylerguha@gmail.com</p>
+    </div>
+    </a>
+    <a href="https://www.linkedin.com/in/skyler-guha/" target="_blank">
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-linkedin-square w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Skyler Guha</p>
+      </div>
+    </a>
+    <a href="https://github.com/Skyler-Guha" target="_blank">
+    <div class="w3-third w3-dark-grey">
+      <p><i class="fa fa-github w3-xxlarge w3-text-light-grey"></i></p>
+      <p>Skyler-Guha</p>
+    </a>
+    </div>
   </div>
+   
 
-  <hr>
-
-  <div>
-    <h2>Any Year Calendar</h2>
-    <img src="./assets/images/any-year-calendar-demo.gif" width="700" alt="Image of titanic">
-    <ul>
-      <li>This is a Calendar utility program written in C programing language.</li>
-      <li>This program can show a calender for any date.</li>
-      <li>This program can also tell what day it would be for any date.</li>
-      <li>The calendar's look is based on the calendar you see when running the Linux cal command.</li>
-      <li><a href="https://github.com/Skyler-Guha/any-year-calendar"><b>Click here to view repository</b></a>
-    </ul>
-  </div>
-
-  <hr>
-
-  <div>
-    <h2>Deferred Acceptance Algorithm</h2>
-    <img src="./assets/images/deferred-acceptance-algorithm-demo.gif" width="700" alt="A gif of the program in action">
-    <ul>
-      <li>This is an educational/utility program free for all.</li>
-      <li>It shows the Deferred Acceptance Algorithm in action.</li>
-      <li>It has animated and color coded sequence of actions showing the working of the algorithm.</li>
-      <li>The speed per step can be changed by the user.</li>
-      <li>It is a single script program complete with GUI and Error handling.</li>
-      <li>It is writen in Python.</li>
-      <li><a href="https://github.com/Skyler-Guha/deferred-acceptance-algorithm"><b>Click here to view repository</b></a>
-    </ul>
-  </div>
-
-  <hr>
-
-  <div>
-    <h2>Email Sending Automation Program</h2>
-    <img src="./assets/images/email-sending-automation-program-demo.gif" width="700" alt="A gif of the program in action">
-    <ul>
-      <li>This is proof of concept prototype program.</li>
-      <li>It allows sending email to a single recipient or multiple recipients.</li>
-      <li>It uses smtp protocol to send email.</li>
-      <li>It is a single script program complete with GUI and Error handling.</li>
-      <li>It is writen in Python.</li>
-      <li><a href="https://github.com/Skyler-Guha/email-sending-automation-program"><b>Click here to view repository</b></a>
-    </ul>
-  </div>
-
-  </body>
+</body>
 </html>
