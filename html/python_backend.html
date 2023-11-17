@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--favicon-->
+<link rel="icon" type="image/x-icon" href="assets\images\site\icons8-favicon-16.png">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skyler's Portfolio</title>
+<meta property="description" content="Projects by Skyler Guha" />
+<meta name="keywords" content="Skyler Guha, Projects, Programing, Python, Machine Learning, Computer Vision, AI, ML">
+<meta name="robots" content="INDEX, FOLLOW">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+<body class="w3-light-grey w3-content" style="max-width:1900px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:240px;" id="mySidebar"><br>
+      <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-xxlarge w3-padding w3-hover-grey" title="close menu">
+          <i class="fa fa-remove"></i>
+        </a>
+        
+        <h4><b>Index :</b></h4>
+      </div>
+      <div class="w3-bar-block">
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+        
+        <a href="./DSandML.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>DS & ML</a>
+        <a href="./python_backend.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding  w3-text-teal"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>Python + Backend</a>
+        <a href="./CandCplusplus.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-arrow-right fa-fw w3-margin-right"></i>C/C++ Programming</a>
+      </div>
+      
+    </nav>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:240px">
+    
+      <!-- Header -->
+      <header id="portfolio">
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+          <i class="fa fa-bars w3-hide-large">
+            <b>Python Programing & Backend Development</b>
+          </i>
+        </span>
+        
+        <div class="w3-container">
+        <div class="w3-bottombar">
+        </div>
+          <br>
+        </div>
+      </header>
+      
+      <div class="main">
+
+        <!-- Deferred Acceptance Algorithm -->
+        <div class="w3-container w3-margin-bottom" style="width:70%;  margin-left: auto; margin-right: auto; ">
+            <img class="myImg" src="..\assets\images\media\python_backend\deferred-acceptance-algorithm-demo.gif" alt="GIF of the program working" style="width:100%; border-style: solid; border-width: 1px; border-color: gray;">
+            <div class="w3-container w3-white" style="width:auto">
+              <p><b>Deferred Acceptance Algorithm</b></p>
+              <p>
+                <ul>
+                    <li>This is an educational/utility program free for all to use.</li>
+                    <li>It shows the Deferred Acceptance Algorithm in action.</li>
+                    <li>It has animated and color coded sequence of actions showing the working of the algorithm.</li>
+                    <li>The speed per step can be changed by the user.</li>
+                    <li>It is a single script program complete with GUI and Error handling.</li>
+                    <li>It is written in Python and saved on github.</li>
+                    <li><a href="https://github.com/Skyler-Guha/deferred-acceptance-algorithm"><b>Click here to view repo</b></a></li>
+                </ul>
+                <br> 
+              </p>
+            </div>
+        </div>
+
+
+        <!-- Email Sending Automation Program -->
+        <div class="w3-container w3-margin-bottom" style="width:70%;  margin-left: auto; margin-right: auto; ">
+            <img class="myImg" src="..\assets\images\media\python_backend\email-sending-automation-program-demo.gif" alt="GIF of the program working" style="width:100%; border-style: solid; border-width: 1px; border-color: gray;">
+            <div class="w3-container w3-white" style="width:auto">
+              <p><b>Email Sending Automation Program</b></p>
+              <p>
+                <ul>
+                    <li>This is proof of concept prototype program.</li>
+                    <li>It allows sending email to a single recipient or multiple recipients.</li>
+                    <li>It uses smtp protocol to send email.</li>
+                    <li>It is a single script program complete with GUI and Error handling.</li>
+                    <li>It is written in Python and saved on github.</li>
+                    <li><a href="https://github.com/Skyler-Guha/email-sending-automation-program"><b>Click here to view repo</b></a></li>
+                </ul>
+                <br> 
+              </p>
+            </div>
+        </div>
+
+        
+
+    
+      </div><!-- all info before here -->
+    
+    <!-- End page content -->
+    </div>
+    </body>
+
+    <script src="../scripts/utils.js"></script>
+
+</html>
